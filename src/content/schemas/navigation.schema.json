@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/navigation.schema.json",
+  "title": "Navigation Schema",
+  "description": "Definition of primary visual and responsive layout menu links.",
+  "type": "object",
+  "properties": {
+    "brandName": {
+      "type": "string",
+      "description": "Visual branding typography name."
+    },
+    "brandLogo": {
+      "$ref": "common.schema.json#/definitions/MediaAsset"
+    },
+    "links": {
+      "type": "array",
+      "description": "Header links structured cleanly for CMS editing and future translations.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "$ref": "common.schema.json#/definitions/LocalizedString",
+            "description": "Link visual element text"
+          },
+          "url": {
+            "type": "string",
+            "description": "Anchor hash tag or internal/external route landing segment."
+          },
+          "isHighlight": {
+            "type": "boolean",
+            "default": false,
+            "description": "Render item marked as visual badge or emphasis."
+          },
+          "children": {
+            "type": "array",
+            "description": "Nested submenu items supporting advanced high-density dropdown rails.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+                "url": { "type": "string" },
+                "description": { "$ref": "common.schema.json#/definitions/LocalizedString" }
+              },
+              "required": ["label", "url"]
+            }
+          }
+        },
+        "required": ["label", "url"]
+      }
+    },
+    "actionButton": {
+      "$ref": "common.schema.json#/definitions/LinkCTA",
+      "description": "Main header high-relevance call-to-action link."
+    }
+  },
+  "required": ["brandName", "links"]
+}

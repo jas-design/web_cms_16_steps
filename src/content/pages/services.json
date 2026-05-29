@@ -1,0 +1,151 @@
+{
+  "seo": {
+    "title": "Clinical Skin Therapies & Services | Cutisure Care",
+    "description": "Browse Cutisure's menu of professional dermaceutical treatments including cellular clarifying peels, low-molecular moisture cell infusion, and restorative anti-aging programs."
+  },
+  "hero": {
+    "accentText": "INTELLIGENT DERMAL PROGRAM",
+    "title": "Precision medical beauty programs centering cellular cell health",
+    "subtitle": "Discover scientifically structured organic skincare therapies. Every treatment is designed to optimize cellular metabolism, repair environmental fatigue, and lock in raw hydration.",
+    "primaryCta": { "text": "Schedule Consultation", "url": "#contact", "variant": "glow" },
+    "secondaryCta": { "text": "Browse Pricing Packages", "url": "#pricing", "variant": "outline" }
+  },
+  "services": {
+    "annotation": "CLINICAL THERAPY MENU",
+    "title": "Targeted Restorative Procedures",
+    "subtitle": "Advanced biological treatments conducted under safe medical-board guidelines utilizing pure organic extracts.",
+    "columns": 3,
+    "services": [
+      {
+        "title": "Cellular Clarifying Peels",
+        "description": "Purifying bio-organic alpha hydroxy fruit acids (AHA) customized to stimulate cellular renewal and uniform tone without aggressive skin peeling.",
+        "iconName": "sparkles",
+        "tags": ["Clarifying", "45 Minutes", "$120 Base"],
+        "linkLabel": "Request Therapy",
+        "linkUrl": "#contact"
+      },
+      {
+        "title": "Deep Hydrating Infusion",
+        "description": "Locks low-molecular weight bio-identical hyaluronic acids into deep epidermal layers to re-plump deflated dermal matrices and restore light bounce.",
+        "iconName": "smile",
+        "tags": ["Hydrating", "60 Minutes", "$140 Base"],
+        "linkLabel": "Request Therapy",
+        "linkUrl": "#contact"
+      },
+      {
+        "title": "Collagen Matrix Overhaul",
+        "description": "Intense micronutrient lipid therapies rich in botanical peptides, repairing weak structural columns to soften fine lines and optimize skin elasticity.",
+        "iconName": "users",
+        "tags": ["Anti-Aging", "75 Minutes", "$160 Base"],
+        "linkLabel": "Request Therapy",
+        "linkUrl": "#contact"
+      },
+      {
+        "title": "UV Oxidation Shield",
+        "description": "Vitamin C and seaweed enzyme therapy designed to dismantle free radicals, diminish sun damage, and boost epidermal defense factors.",
+        "iconName": "shield",
+        "tags": ["Antioxidant", "50 Minutes", "$130 Base"],
+        "linkLabel": "Request Therapy",
+        "linkUrl": "#contact"
+      },
+      {
+        "title": "Lymphatic Skin Drainage",
+        "description": "Gentle manual pressure and cold-stone therapy to flush fluids, soothe sinus pressure, clear dermal waste channels, and reduce facial puffiness.",
+        "iconName": "compass",
+        "tags": ["Detoxifying", "40 Minutes", "$110 Base"],
+        "linkLabel": "Request Therapy",
+        "linkUrl": "#contact"
+      },
+      {
+        "title": "Barrier Seal Protection",
+        "description": "Ceramide-heavy nourishing therapy designed specifically to strengthen compromised skin suffering from rosecea, severe eczema, or dry scales.",
+        "iconName": "calendar",
+        "tags": ["Soothing", "55 Minutes", "$125 Base"],
+        "linkLabel": "Request Therapy",
+        "linkUrl": "#contact"
+      }
+    ]
+  },
+  "pricing": {
+    "annotation": "TRANSPARENT VALUE MATRIX",
+    "title": "Structured Skin Care Packages",
+    "subtitle": "No hidden clinic fees. Standard flat levels tailored to support long-term dermal health and cellular cell rejuvenation.",
+    "columns": 3,
+    "plans": [
+      {
+        "planName": "Skin Diagnostic & Consultation",
+        "price": "$85",
+        "billingPeriod": "per eval",
+        "description": "Essential diagnostic review tracking hydration, barrier thickness, and sebum ratios.",
+        "features": [
+          "Microscopic sebum map",
+          "Custom lifestyle protocol",
+          "Free $15 travel botanical test kit",
+          "Verified HIPAA clinical record"
+        ],
+        "isPopular": false,
+        "ctaText": "Book Consultation",
+        "ctaUrl": "#contact"
+      },
+      {
+        "planName": "Dermal Active Cleansing",
+        "price": "$125",
+        "billingPeriod": "per session",
+        "description": "Perfect clarifying treatment featuring cellular peels and moisture infusion locks.",
+        "features": [
+          "Cold-extract clarify prep",
+          "Bio-active fruit peel session",
+          "Low-molecular moisture seal",
+          "Aromatherapy cooling mask"
+        ],
+        "isPopular": true,
+        "ctaText": "Book Active Session",
+        "ctaUrl": "#contact"
+      },
+      {
+        "planName": "Complete Barrier Overhaul",
+        "price": "$185",
+        "billingPeriod": "per session",
+        "description": "Premium multi-layer collagen matrix support and defensive ceramide lock therapy.",
+        "features": [
+          "Includes everything in Active Cleanse",
+          "75 Minute custom peptide massage",
+          "Warm botanical oil compress wrap",
+          "Post-clinic home skin-seal plan"
+        ],
+        "isPopular": false,
+        "ctaText": "Book Matrix Session",
+        "ctaUrl": "#contact"
+      }
+    ]
+  },
+  "gallery": {
+    "annotation": "CLINICAL BEAUTY LAB DIARY",
+    "title": "Visual Proof of Restoration",
+    "subtitle": "Unretouched botanical extractions and quiet treatment environments engineered to provide maximum sensory calm.",
+    "columns": 3,
+    "items": [
+      {
+        "id": "item1",
+        "imageUrl": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=400",
+        "title": "Cold Botanical Distillations",
+        "category": "Extraction Lab",
+        "description": "Extracting rich essences of peppermint and lavender under strict lab controls."
+      },
+      {
+        "id": "item2",
+        "imageUrl": "https://images.unsplash.com/photo-1608248597481-496100c80836?auto=format&fit=crop&q=80&w=400",
+        "title": "Serene Rejuvenation Spaces",
+        "category": "Treatment Center",
+        "description": "Quiet clinical beds surrounded by calming light spectrum grids."
+      },
+      {
+        "id": "item3",
+        "imageUrl": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=400",
+        "title": "Bio-Identical Facial Oils",
+        "category": "Our Products",
+        "description": "Pure plant squalane and defensive cold oils ready for treatment penetration."
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../schemas/footer.schema.json",
+  "columns": [
+    {
+      "title": { "en": "Dermal Care Solutions", "es": "Soluciones Dermatológicas", "fr": "Traitements Cliniques" },
+      "links": [
+        { "label": { "en": "Cell Peels", "es": "Peelings Activos", "fr": "Peelings Actifs" }, "url": "#services" },
+        { "label": { "en": "Barrier Repair", "es": "Reparación de Barrera", "fr": "Barrière Cutanée" }, "url": "#services" },
+        { "label": { "en": "Dermis Diagnostic", "es": "Diagnóstico Sebum", "fr": "Diagnostic Sébum" }, "url": "#contact" }
+      ]
+    },
+    {
+      "title": { "en": "Company & Research", "es": "Ciencia y Empresa", "fr": "Entreprise & Science" },
+      "links": [
+        { "label": { "en": "Dermatology Board", "es": "Comité Médico", "fr": "Conseil Scientifique" }, "url": "#about" },
+        { "label": { "en": "Clinical Audits", "es": "Auditorías de Seguridad", "fr": "Audits Cliniques" }, "url": "#about" },
+        { "label": { "en": "Safety Standards", "es": "Estándares Biológicos", "fr": "Normes Biologiques" }, "url": "#faq" }
+      ]
+    }
+  ],
+  "newsletterForm": {
+    "isActive": true,
+    "title": { "en": "Subscribe to Dermatological Bulletins", "es": "Boletines Médicos de Cutisure", "fr": "Bulletins de Recherche Clinique" },
+    "placeholder": { "en": "Enter research-secure email", "es": "Correo electrónico de investigación", "fr": "Adresse e-mail" },
+    "submitText": { "en": "Subscribe", "es": "Registrar", "fr": "S'abonner" }
+  },
+  "legalNotes": [
+    { "label": { "en": "Privacy Policy & GDPR", "es": "Privacidad de Datos", "fr": "Confidentialité" }, "url": "/privacy" },
+    { "label": { "en": "Dermis Liability Waiver", "es": "Descargo de Responsabilidad", "fr": "Responsabilité" }, "url": "/disclaimer" }
+  ],
+  "copyright": {
+    "en": "© 2026 Cutisure Pure Dermal Matrix. Clinical Skincare Research Certified SOC2. HIPAA secure transmission protocols.",
+    "es": "© 2026 Cutisure Pure Dermal Matrix. Certificado en Investigación SOC2. HIPAA transmitido con cifrado.",
+    "fr": "© 2026 Cutisure Pure Dermal Matrix. Certifié SOC2. Protocoles d'échange de données de santé sécurisés."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "brandName": "Cutisure",
+  "links": [
+    { "label": "Home", "url": "#home" },
+    { "label": "About Us", "url": "#about" },
+    { "label": "Services & Pricing", "url": "#services" },
+    { "label": "FAQ", "url": "#faq" },
+    { "label": "Contact & Booking", "url": "#contact" }
+  ],
+  "footer": {
+    "copyright": "© 2026 Cutisure Pure Derma Care. Clinical Skincare Research Certified (SOC2)."
+  }
+}

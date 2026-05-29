@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Cutisure | Pure Dermatological Skincare Solutions",
+    "description": "Discover medical-grade, organic dermaceutical therapies formulated under direct clinical supervision to protect and restore skin longevity.",
+    "keywords": ["organic dermatology", "clinical skincare", "pore cleanse", "moisture dermal therapy"]
+  },
+  "hero": {
+    "accentText": "Nurture Your Natural Glow",
+    "title": "Reveal Your True Glow under expert clinical supervision",
+    "subtitle": "Discover personalized, scientifically guarded skincare protocols targeting deep cellular hydration, completely free from aggressive artificial toxins.",
+    "primaryCta": { "text": "Schedule Consultation", "url": "#contact", "variant": "glow" },
+    "secondaryCta": { "text": "Explore Treatments", "url": "#services", "variant": "outline" },
+    "imageUrl": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=600",
+    "floatingBadge": "Certified Dermatologist Approved",
+    "benefits": ["99.4% Pure Botanical Base", "Clinically Formulated", "HIPAA Transmits Encrypted", "Zero Toxins & Parabens"]
+  },
+  "stats": [
+    { "value": "12+", "label": "Years Clinically Certified", "description": "Continuous medical board supervision and skin safety audits." },
+    { "value": "99.4%", "label": "Pure Bioactive Botanicals", "description": "Formulated exclusively with certified organic ingredients." },
+    { "value": "15,000+", "label": "Revitalized Patients", "description": "Documented progress across multiple high-density clinics." }
+  ],
+  "about": {
+    "annotation": "PHILOSOPHY & ETHICAL RESEARCH",
+    "title": "Honorable clinical science meets",
+    "italicWord": "organic harmony",
+    "description": "At Cutisure, we combine rigorous laboratory diagnostics with the soothing properties of active plant botanicals.",
+    "paragraphs": [
+      "Our formulas undergo multi-tier clinical trials and strict dermatologist oversight to guarantee safety benchmarks on hyper-sensitive dermis types.",
+      "By eliminating standard industrial fillers and aggressive parabens, we protect and replenish your natural acid mantle, supporting cell turnover cycles with gentle, protective efficacy."
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1556228515-3198ece1c440?auto=format&fit=crop&q=80&w=600",
+    "experienceYears": "12+",
+    "features": [
+      { "title": "Bespoke Diagnosis", "description": "Every skin diagnostic traces cell density and sebum levels." },
+      { "title": "Eco-Certified Sourcing", "description": "Our flora and cold-pressed botanical oils are 100% fair-trade certified." }
+    ]
+  },
+  "servicesBrief": {
+    "annotation": "TARGETED DERMAL PATHWAYS",
+    "title": "Core Regenerative Therapies",
+    "subtitle": "Explore our primary dermatology-grade care therapies meticulously custom aligned for individual dermal health outcomes.",
+    "columns": 3,
+    "items": [
+      {
+        "title": "Cellular Active Peels",
+        "description": "Purifying fruit acid peels designed to accelerate uniform cell turnover and fade hyperpigmentation smoothly without inflammation.",
+        "iconName": "sparkles",
+        "tags": ["Clarifying", "Clinical Grade"],
+        "linkLabel": "View Treatment Spec",
+        "linkUrl": "#services"
+      },
+      {
+        "title": "Hydrating Moisture Infusion",
+        "description": "Uptake booster protocols utilizing low-molecular hyaluronic acid to lock intensive hydration behind the skin's lipid boundary.",
+        "iconName": "smile",
+        "tags": ["Hydrating", "Restorative"],
+        "linkLabel": "View Treatment Spec",
+        "linkUrl": "#services"
+      },
+      {
+        "title": "Fractioned UV Repair",
+        "description": "Soothe environmental damage, repair free radical oxidation, and protect overall skin barrier integrity with botanical antioxidants.",
+        "iconName": "shield",
+        "tags": ["Antioxidant", "Protection"],
+        "linkLabel": "View Treatment Spec",
+        "linkUrl": "#services"
+      }
+    ]
+  },
+  "cta": {
+    "annotation": "YOUR PATIENT JOURNEY BEGINS",
+    "title": "Ready to rediscover your skin's innate vitality?",
+    "subtitle": "Book an in-person diagnostic evaluation or a private video consultation. Let our certified specialists analyze your skin profile and build a personalized dermal matrix.",
+    "theme": "dark",
+    "ctas": [
+      { "text": "Secure Skin Analysis", "url": "#contact", "variant": "primary" },
+      { "text": "Contact Specialist", "url": "#faq", "variant": "outline" }
+    ]
+  }
+}

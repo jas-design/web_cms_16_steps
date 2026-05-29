@@ -1,0 +1,26 @@
+{
+  "seo": {
+    "title": "Contact & Booking | Cutisure Care - Book Diagnosis",
+    "description": "Get in touch with our clinical dermatology coordinators, view opening hours, locate our treatment spaces, and submit your secure diagnostic consultation inquiry."
+  },
+  "hero": {
+    "accentText": "CLINICAL ACCESS CHANNELS",
+    "title": "Schedule your skin diagnostic evaluation today",
+    "subtitle": "Reach out directly via phone, secure email, or submit our HIPAA-compliant clinic formulation form below to receive a personalized skincare treatment strategy.",
+    "primaryCta": { "text": "Fill Booking Form", "url": "#booking", "variant": "glow" },
+    "secondaryCta": { "text": "Call Clinical Desk", "url": "tel:+15550192831", "variant": "outline" }
+  },
+  "contact": {
+    "annotation": "SCHEDULING DEPOT",
+    "title": "Contact Information & Hours",
+    "subtitle": "Coordinates to our sanctuary. Connect with our administrative personnel for immediate booking assistance.",
+    "email": "clinical-care@cutisure.com",
+    "phone": "+1 (555) 019-2831",
+    "address": "Sanctuary Plaza, Suite 402, Dermal Boulevard, California",
+    "hours": [
+      "Monday - Friday: 8:00 AM - 6:00 PM",
+      "Saturday: 9:00 AM - 4:00 PM",
+      "Sunday: Closed"
+    ]
+  }
+}

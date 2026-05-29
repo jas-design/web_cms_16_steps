@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/common.schema.json",
+  "title": "Common Definitions Schema",
+  "description": "Standard reusable definitions supporting internationalization, advanced media assets, call-to-actions, and metadata.",
+  "definitions": {
+    "LocalizedString": {
+      "type": "object",
+      "description": "Localized text object to support multi-language content translation.",
+      "properties": {
+        "en": { "type": "string", "description": "English translation" },
+        "es": { "type": "string", "description": "Spanish translation" },
+        "fr": { "type": "string", "description": "French translation" }
+      },
+      "required": ["en"]
+    },
+    "LocalizedTextarea": {
+      "type": "object",
+      "description": "Localized block of long text supporting rich descriptions or line breaks.",
+      "properties": {
+        "en": { "type": "string", "description": "English text (multiline support)" },
+        "es": { "type": "string", "description": "Spanish text" },
+        "fr": { "type": "string", "description": "French text" }
+      },
+      "required": ["en"]
+    },
+    "MediaAsset": {
+      "type": "object",
+      "description": "Rich media representation for assets managed under high-quality CMS workflow.",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "The public-facing CDN absolute address of the asset."
+        },
+        "alt": {
+          "type": "string",
+          "description": "Accessibility text description, essential for SEO and screen-readers."
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Original structural image width in pixels."
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Original structural image height in pixels."
+        },
+        "focalPoint": {
+          "type": "object",
+          "description": "The alignment index used for custom crop presets without losing region of interest.",
+          "properties": {
+            "x": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.5 },
+            "y": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.5 }
+          },
+          "required": ["x", "y"]
+        },
+        "caption": {
+          "type": "string",
+          "description": "Optional photographer caption or copyright notice."
+        }
+      },
+      "required": ["url", "alt"]
+    },
+    "LinkCTA": {
+      "type": "object",
+      "description": "Standardized interaction element representing buttons and linkages.",
+      "properties": {
+        "label": {
+          "$ref": "#/definitions/LocalizedString",
+          "description": "Action clickable text label."
+        },
+        "url": {
+          "type": "string",
+          "description": "Navigation anchoring target destination, including #sections, absolute URLs, or sub-paths."
+        },
+        "variant": {
+          "type": "string",
+          "enum": ["primary", "secondary", "outline", "glow", "text"],
+          "default": "primary",
+          "description": "Visual theme rendering treatment."
+        },
+        "isExternal": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to launch the linked resource in a clean external tab with secure headers."
+        }
+      },
+      "required": ["label", "url"]
+    },
+    "SEOConfig": {
+      "type": "object",
+      "description": "Deep audit capabilities for target indexing and organic crawler configurations.",
+      "properties": {
+        "metaTitle": {
+          "$ref": "#/definitions/LocalizedString",
+          "description": "Primary SEO title displayed on tabs and search summaries. Keep below 60 chars."
+        },
+        "metaDescription": {
+          "$ref": "#/definitions/LocalizedString",
+          "description": "Search engine text snippet. Keep below 155-160 characters for maximum view integrity."
+        },
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Target indexing keywords matching search queries."
+        },
+        "openGraph": {
+          "type": "object",
+          "description": "Rich content injection properties for sharing previews on social streams.",
+          "properties": {
+            "ogTitle": { "$ref": "#/definitions/LocalizedString" },
+            "ogDescription": { "$ref": "#/definitions/LocalizedString" },
+            "ogImage": { "$ref": "#/definitions/MediaAsset" },
+            "ogType": { "type": "string", "default": "website" }
+          },
+          "required": ["ogTitle", "ogDescription"]
+        },
+        "indexing": {
+          "type": "object",
+          "description": "Search index control headers.",
+          "properties": {
+            "robotsMeta": {
+              "type": "string",
+              "default": "index, follow",
+              "enum": ["index, follow", "noindex, nofollow", "noindex, follow", "index, nofollow"]
+            },
+            "canonicalUrl": {
+              "type": "string",
+              "format": "uri",
+              "description": "Preferred absolute URL routing address pointing to primary asset node."
+            }
+          }
+        }
+      },
+      "required": ["metaTitle", "metaDescription"]
+    },
+    "SectionMeta": {
+      "type": "object",
+      "description": "Standard wrapper configuration wrapping section layouts.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-_]+$",
+          "description": "Unique DOM anchor identifier (e.g. 'home', 'services-grid')."
+        },
+        "bgType": {
+          "type": "string",
+          "enum": ["primary", "secondary", "tertiary", "dimmed", "accent-glow"],
+          "default": "primary"
+        },
+        "paddingTop": {
+          "type": "string",
+          "enum": ["none", "xs", "s", "m", "l", "xl", "xxl"],
+          "default": "m"
+        },
+        "paddingBottom": {
+          "type": "string",
+          "enum": ["none", "xs", "s", "m", "l", "xl", "xxl"],
+          "default": "m"
+        }
+      },
+      "required": ["id", "bgType"]
+    }
+  }
+}

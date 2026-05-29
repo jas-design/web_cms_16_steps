@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/page.schema.json",
+  "title": "Page Configuration Schema",
+  "description": "Standardized container representing a primary webpage entity.",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-/]+$",
+      "description": "Universal pointer match for routing (e.g. 'home', 'services/cellular-active-peel')."
+    },
+    "seo": {
+      "$ref": "common.schema.json#/definitions/SEOConfig",
+      "description": "Page-specific meta directives to support search engines."
+    },
+    "sections": {
+      "type": "array",
+      "description": "Dynamic layout engine containing pointers or raw section definitions matching layouts.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["hero", "services", "testimonials", "pricing", "faq", "gallery", "cta-section", "form-section", "custom-section"],
+            "description": "The layout block element renderer type."
+          },
+          "sectionId": {
+            "type": "string",
+            "description": "Optional custom target HTML id parameter used for anchor scrolls."
+          },
+          "isShared": {
+            "type": "boolean",
+            "default": false,
+            "description": "Indicates if the section content is pulled from a global reusable content block."
+          },
+          "sharedReferenceKey": {
+            "type": "string",
+            "description": "The key associated with shared component instances (e.g., 'primary-contact-form')."
+          },
+          "content": {
+            "type": "object",
+            "description": "Self-contained page section content data mapping the respective subschematic block."
+          }
+        },
+        "required": ["type"]
+      }
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["slug", "seo", "sections"]
+}

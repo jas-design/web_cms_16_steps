@@ -1,0 +1,56 @@
+{
+  "seo": {
+    "title": "FAQ | Cutisure Care - Skincare Questions & Answers",
+    "description": "Read clinical explanations on how certified organic skincare, biochemical gentle fruit peels, and low-molecular hydration setups work, directly from our medical board."
+  },
+  "hero": {
+    "accentText": "SCIENCE DEMANDING TRANSPARENCY",
+    "title": "Clear answers rooted in clinical dermatology",
+    "subtitle": "Discover the scientific truths behind bio-active plant extractions, pH buffering scales, and safe medical procedures for hyper-sensitive skin. No marketing myths.",
+    "primaryCta": { "text": "Submit Custom Inquiry", "url": "#contact", "variant": "glow" },
+    "secondaryCta": { "text": "Review Clinical Papers", "url": "#about", "variant": "outline" }
+  },
+  "faq": {
+    "annotation": "PATIENT KNOWLEDGE BASE",
+    "title": "Essential Clinical FAQs",
+    "subtitle": "Review scientific answers covering ingredients, treatment times, downtime, and formulation safety standards.",
+    "columns": 1,
+    "items": [
+      {
+        "id": "faq1",
+        "title": "Why does Cutisure strictly avoid liquid silicones and mineral hydrocarbons?",
+        "content": "Mineral oils and silicones form a synthetic, impermeable layer over the skin. While this provides a temporary smooth feeling, it traps sweat, sebum, and harmful bacteria underneath, disrupting standard exfoliation cycles. We replace them with cold-refined botanical squalane and jojoba waxes which adapt to your natural lipid structure harmoniously."
+      },
+      {
+        "id": "faq2",
+        "title": "Are your cellular fruit peels safe for active rosecea or extreme dry scales?",
+        "content": "Yes. Standard beauty salons use severe glycolic acids which trigger massive defensive inflammation cascades. We formulate with gentle lactic acids and green tea extract enzymes from nature. They dissolve dead cell links quietly and promote lipid synthesis without causing skin redness or compromising barrier thickness."
+      },
+      {
+        "id": "faq3",
+        "title": "What does a pH-buffered skincare regime mean practically?",
+        "content": "Healthy skin has an acidic surface (pH 4.8 to 5.5). Standard commercial soaps and foaming chemical cleansers are alkaline (pH 7 to 9), strip lipids, and leave skin exposed to bacterial attack for up to 6 hours. Every Cutisure cleanser is buffered back to pH 5.2, locking in moisture and defending healthy microflora."
+      },
+      {
+        "id": "faq4",
+        "title": "Is there any aesthetic downtime required after your clinic treatments?",
+        "content": "None at all. Our restorative philosophy focuses on building skin thickness rather than tearing it down. You can safely present yourself in public immediately after any of our moisture infusions, enzyme peels, or peptide matrix sessions, carrying only a natural, healthy glow."
+      },
+      {
+        "id": "faq5",
+        "title": "Are Cutisure formulas and clinical consultations HIPAA-compliant?",
+        "content": "Absolutely. On our digital systems, every booking data stream and patient consultation record is encrypted with high-fidelity SOC2 transport keys. We guarantee your patient data is stored or transmitted in perfect accordance with modern clinical privacy mandates."
+      }
+    ]
+  },
+  "ctaSection": {
+    "annotation": "STILL LOOKING FOR ANSWERS?",
+    "title": "Our clinical experts are here to help",
+    "subtitle": "If you are suffering from acute skin conditions or want reassurance about specific botanical allergies, our triage nurse is ready to review your medical history.",
+    "theme": "glass",
+    "ctas": [
+      { "text": "Connect with Clinical Advisor", "url": "#contact", "variant": "primary" },
+      { "text": "Browse About Research", "url": "#about", "variant": "outline" }
+    ]
+  }
+}

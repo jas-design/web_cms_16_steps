@@ -1,0 +1,68 @@
+{
+  "$schema": "../schemas/navigation.schema.json",
+  "brandName": "Cutisure",
+  "brandLogo": {
+    "url": "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?auto=format&fit=crop&q=80&w=200",
+    "alt": "Cutisure Monogram logo",
+    "width": 120,
+    "height": 40,
+    "focalPoint": { "x": 0.5, "y": 0.5 }
+  },
+  "links": [
+    {
+      "label": {
+        "en": "Home",
+        "es": "Inicio",
+        "fr": "Accueil"
+      },
+      "url": "#home"
+    },
+    {
+      "label": {
+        "en": "About Skin Science",
+        "es": "Ciencia Cutánea",
+        "fr": "Science de la peau"
+      },
+      "url": "#about"
+    },
+    {
+      "label": {
+        "en": "Treatments",
+        "es": "Tratamientos",
+        "fr": "Traitements"
+      },
+      "url": "#services",
+      "isHighlight": true,
+      "children": [
+        {
+          "label": { "en": "Cellular HydroPeels", "es": "Peelings Hidratantes", "fr": "Peelings cellulaires" },
+          "url": "#services",
+          "description": { "en": "Fast cell turn-over exfoliation", "es": "Exfoliación hidratante rápida", "fr": "Exfoliation cellulaire rapide" }
+        },
+        {
+          "label": { "en": "UV Matrix Repair", "es": "Reparación UV", "fr": "Réparation UV" },
+          "url": "#services",
+          "description": { "en": "Protect barriers on cellular oxidation", "es": "Protección contra oxidación celular", "fr": "Protection antioxydante" }
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "Clinical FAQ",
+        "es": "Preguntas Clínicas",
+        "fr": "FAQ Clinique"
+      },
+      "url": "#faq"
+    }
+  ],
+  "actionButton": {
+    "label": {
+      "en": "Book Assessment",
+      "es": "Reservar Evaluación",
+      "fr": "Réserver un bilan"
+    },
+    "url": "#contact",
+    "variant": "glow",
+    "isExternal": false
+  }
+}

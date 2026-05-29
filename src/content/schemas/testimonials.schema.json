@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/testimonials.schema.json",
+  "title": "Testimonials Component Schema",
+  "description": "Validation constraints modeling clinical safety reviews, treatment reflections, and customer quotes.",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "$ref": "common.schema.json#/definitions/SectionMeta"
+    },
+    "annotation": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "title": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "subtitle": {
+      "$ref": "common.schema.json#/definitions/LocalizedTextarea"
+    },
+    "layout": {
+      "type": "string",
+      "enum": ["carousel", "grid", "masonry"],
+      "default": "grid"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "quote": { "$ref": "common.schema.json#/definitions/LocalizedTextarea" },
+          "authorName": { "type": "string" },
+          "authorRole": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "rating": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "default": 5
+          },
+          "avatar": {
+            "$ref": "common.schema.json#/definitions/MediaAsset",
+            "description": "Client profile graphic resource config."
+          },
+          "verifiedTreatment": {
+            "$ref": "common.schema.json#/definitions/LocalizedString",
+            "description": "Label specifying treatment (helps contextualize medical trust)."
+          }
+        },
+        "required": ["quote", "authorName"]
+      }
+    }
+  },
+  "required": ["title", "items"]
+}

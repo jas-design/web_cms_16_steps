@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/global.schema.json",
+  "title": "Global Site Settings Schema",
+  "description": "Critical settings applicable across the entirety of the digital experience.",
+  "type": "object",
+  "properties": {
+    "siteName": {
+      "type": "string",
+      "description": "Standard visual name of the website."
+    },
+    "localization": {
+      "type": "object",
+      "description": "Default and supported locale listings for future-proof internationalization.",
+      "properties": {
+        "defaultLocale": { "type": "string", "default": "en" },
+        "supportedLocales": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": ["en", "es", "fr"]
+        }
+      },
+      "required": ["defaultLocale", "supportedLocales"]
+    },
+    "branding": {
+      "type": "object",
+      "description": "Visual guideline references managed by CMS edits.",
+      "properties": {
+        "logoDark": {
+          "$ref": "common.schema.json#/definitions/MediaAsset"
+        },
+        "logoLight": {
+          "$ref": "common.schema.json#/definitions/MediaAsset"
+        },
+        "primaryThemeColor": {
+          "type": "string",
+          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+          "default": "#005a36",
+          "description": "Principal brand theme HEX color used for dynamic accents."
+        }
+      },
+      "required": ["logoDark"]
+    },
+    "socialLinks": {
+      "type": "array",
+      "description": "Uniform list of dynamic connected channels.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "platform": { "type": "string", "enum": ["facebook", "instagram", "twitter", "linkedin", "youtube"] },
+          "url": { "type": "string", "format": "uri" }
+        },
+        "required": ["platform", "url"]
+      }
+    },
+    "contact": {
+      "type": "object",
+      "description": "Global institutional contact constants. Can be referenced in other sections.",
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "address": { "type": "string" }
+      }
+    }
+  },
+  "required": ["siteName", "localization", "branding"]
+}

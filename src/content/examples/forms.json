@@ -1,0 +1,103 @@
+{
+  "$schema": "../schemas/form.schema.json",
+  "meta": {
+    "id": "contact-booking-form-wrap",
+    "bgType": "primary",
+    "paddingTop": "m",
+    "paddingBottom": "l"
+  },
+  "formId": "dermis_consultation_form",
+  "title": {
+    "en": "Secure Clinical Evaluation Request",
+    "es": "Solicitud de Evaluación Clínica de la Piel",
+    "fr": "Demande de Bilan Clinique Sécurisé"
+  },
+  "subtitle": {
+    "en": "Provide your dermal properties. Our board-certified specialists will scan your details and form a diagnostic blueprint within 24 working hours.",
+    "es": "Complete sus datos cutáneos. Especialistas médicos diseñarán su protocolo personalizado en menos de 24 horas.",
+    "fr": "Renseignez vos objectifs de peau. Nos praticiens certifiés élaboreront votre protocole sous 24 heures."
+  },
+  "actionUrl": "/api/contact/submit",
+  "submitLabel": {
+    "en": "Transmit Secure Record",
+    "es": "Transmitir Datos de Manera Segura",
+    "fr": "Soumettre mon dossier"
+  },
+  "successMessage": {
+    "en": "Diagnostic record transmitted. Your clinical ID has been assigned, and a specialist will contact you shortly.",
+    "es": "Registro clínico transmitido con éxito. Un médico especialista le contactará enseguida.",
+    "fr": "Dossier médical transmis. Un praticien référent prendra contact avec vous rapidement pour fixer votre rendez-vous."
+  },
+  "fields": [
+    {
+      "fieldName": "patient_name",
+      "label": {
+        "en": "Patient Legal Name",
+        "es": "Nombre Completo del Paciente"
+      },
+      "fieldType": "text",
+      "required": true,
+      "placeholder": {
+        "en": "e.g., Jane Sterling",
+        "es": "ej. Juana Sterling"
+      },
+      "errorMessage": {
+        "en": "Please specify your legal name for medical logs.",
+        "es": "Se requiere su nombre para el registro de pacientes."
+      }
+    },
+    {
+      "fieldName": "patient_email",
+      "label": {
+        "en": "Research Secured Email",
+        "es": "Correo Electrónico de Investigación"
+      },
+      "fieldType": "email",
+      "required": true,
+      "placeholder": {
+        "en": "client@researchmail.com",
+        "es": "paciente@correo.com"
+      },
+      "errorMessage": {
+        "en": "Please provide a valid secure email address.",
+        "es": "Se requiere un correo de comunicación seguro."
+      }
+    },
+    {
+      "fieldName": "skin_nature",
+      "label": {
+        "en": "Primary Skin Sensitive Concern",
+        "es": "Preocupación Sensible de la Piel"
+      },
+      "fieldType": "select",
+      "required": true,
+      "options": [
+        {
+          "value": "dryness-tightness",
+          "label": { "en": "Dryness & Tightness", "es": "Sequedad y Tirantez" }
+        },
+        {
+          "value": "redness-rosacea",
+          "label": { "en": "Active Redness / Rosacea", "es": "Enrojecimiento / Rosácea" }
+        },
+        {
+          "value": "pore-overload",
+          "label": { "en": "Sebum Overload / Blemishes", "es": "Sobrecarga de Sebo / Poros" }
+        }
+      ]
+    },
+    {
+      "fieldName": "clinical_logs",
+      "label": {
+        "en": "Previous Treatment Logs & Allergies",
+        "es": "Alergias o Tratamientos Previos"
+      },
+      "fieldType": "textarea",
+      "required": false,
+      "placeholder": {
+        "en": "List active ingredients that cause you severe redness (e.g. salicylic acid, parabens, excessive glycolic acid).",
+        "es": "Describa ingredientes que le causen alergias o enrojecimiento severo."
+      }
+    }
+  ]
+}

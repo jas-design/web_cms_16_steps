@@ -1,0 +1,70 @@
+{
+  "seo": {
+    "title": "About Us | Cutisure Care - Organic Skin Longevity Research",
+    "description": "Learn about Cutisure's specialized clinical heritage, dermatological testing philosophies, and sustainable botanical agriculture standard."
+  },
+  "hero": {
+    "accentText": "ESTABLISHED SKIN RESEARCH",
+    "title": "Formulated for skin longevity, engineered to protect",
+    "subtitle": "Discover our meticulous scientific heritage, combining certified medical dermatology audits with eco-harvested botanical actives to preserve your skin's acid mantle.",
+    "primaryCta": { "text": "Our Sourcing Promise", "url": "#sourcing", "variant": "glow" },
+    "secondaryCta": { "text": "Dermatology Board", "url": "#board", "variant": "outline" }
+  },
+  "narrative": {
+    "annotation": "FOUNDER HISTORIES & LAB RESEARCH",
+    "title": "A standard born from direct clinical necessity,",
+    "italicWord": "uncompromising purity",
+    "description": "Founded by a dedicated board of clinical dermatologists, Cutisure was established to eliminate the toxic industrial chemical load found in general cosmetic skincare.",
+    "paragraphs": [
+      "We believe true skin rejuvenation demands a quiet, gentle approach. Rather than forcing temporary results through aggressive chemical peels or severe micro-tearing protocols, our therapies support your skin's natural healing timeline.",
+      "Each batch is hand-tested in our certified lab, cold-isolated to preserve biological potency of active plant enzymes and botanical defense proteins.",
+      "Today, our research facility continues to collaborate with organic farms globally, validating plant defense compounds and integrating them into bio-identical base oils modeled on the natural lipid profile of healthy skin cells."
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600",
+    "experienceYears": "12+ YRS",
+    "features": [
+      { "title": "Zero Silicon Derivatives", "description": "We replace standard synthetic silicones with pure botanical fractions." },
+      { "title": "Clinical Cohort Validations", "description": "Formulas are validated against strict 150-patient placebo skin trials." }
+    ]
+  },
+  "features": {
+    "annotation": "CORE DERMAL PRINCIPLES",
+    "title": "Our Clinical Commitments",
+    "subtitle": "Four core structural rules governing every single formulation and therapeutic procedure.",
+    "columns": 2,
+    "items": [
+      {
+        "title": "Botanical Bio-Availability",
+        "description": "Our cold extraction isolation preserves active botanical enzymes in their highest bio-available cellular states, optimizing dermal penetration.",
+        "iconName": "sparkles"
+      },
+      {
+        "title": "Acid Mantle Stabilization",
+        "description": "Every formulation is strictly pH-buffered between 4.8 and 5.5 to mimic and reinforce your natural acid mantle protection buffer.",
+        "iconName": "shield"
+      },
+      {
+        "title": "Hypoallergenic Compliance",
+        "description": "Independently audited under dermatological supervision to guarantee absolute non-irritancy on active eczema or highly sensitive skin.",
+        "iconName": "smile"
+      },
+      {
+        "title": "Biodegradable Footprint",
+        "description": "100% compostable outer packaging with raw botanical oils sourced carefully without contributing to global deforestation cycles.",
+        "iconName": "compass"
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "Our Scientific Accountability",
+    "subtitle": "How lead cosmetic analysts and dermatologists rate our gentle, restorative approach.",
+    "items": [
+      {
+        "quote": "Cutisure's complete removal of silicone bases and texturizers in favor of botanical squalane has revolutionized my rehabilitation program for barrier-compromised patients.",
+        "authorName": "Dr. Aris Thorne",
+        "authorRole": "Chief Microbiologist, Dermal Research Institute",
+        "rating": 5
+      }
+    ]
+  }
+}

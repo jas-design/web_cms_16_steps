@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/pricing.schema.json",
+  "title": "Pricing Matrices Schema",
+  "description": "Definition schema representing pricing tiered solutions or consulting quotes.",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "$ref": "common.schema.json#/definitions/SectionMeta"
+    },
+    "annotation": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "title": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "subtitle": {
+      "$ref": "common.schema.json#/definitions/LocalizedTextarea"
+    },
+    "currencySymbol": {
+      "type": "string",
+      "default": "$",
+      "description": "Primary currency representation text (e.g. $, €, £)."
+    },
+    "billingIntervals": {
+      "type": "array",
+      "description": "Supported period intervals (e.g., 'One-time', 'Per Session', 'Monthly').",
+      "items": { "$ref": "common.schema.json#/definitions/LocalizedString" }
+    },
+    "plans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "planName": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "price": { "type": "string", "description": "Flat price string (e.g. '180', 'Custom')." },
+          "billingSuffix": { "$ref": "common.schema.json#/definitions/LocalizedString", "description": "e.g., 'session', 'month'." },
+          "description": { "$ref": "common.schema.json#/definitions/LocalizedTextarea" },
+          "isPopular": { "type": "boolean", "default": false },
+          "badgeClean": { "$ref": "common.schema.json#/definitions/LocalizedString", "description": "Custom label highlight on card (e.g., 'Best Value')." },
+          "features": {
+            "type": "array",
+            "items": { "$ref": "common.schema.json#/definitions/LocalizedString" }
+          },
+          "action": {
+            "$ref": "common.schema.json#/definitions/LinkCTA"
+          }
+        },
+        "required": ["planName", "price", "features", "action"]
+      }
+    }
+  },
+  "required": ["title", "plans"]
+}

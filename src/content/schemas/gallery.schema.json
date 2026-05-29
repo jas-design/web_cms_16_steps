@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/gallery.schema.json",
+  "title": "Galleries Section Schema",
+  "description": "Validation constraints modeling media directories, focal bounds, and portfolio items.",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "$ref": "common.schema.json#/definitions/SectionMeta"
+    },
+    "annotation": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "title": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "subtitle": {
+      "$ref": "common.schema.json#/definitions/LocalizedTextarea"
+    },
+    "columns": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 5,
+      "default": 3
+    },
+    "aspectRatio": {
+      "type": "string",
+      "enum": ["square", "video", "portrait", "masonry"],
+      "default": "square"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "media": { "$ref": "common.schema.json#/definitions/MediaAsset" },
+          "title": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "description": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "category": { "type": "string" }
+        },
+        "required": ["media"]
+      }
+    }
+  },
+  "required": ["title", "items"]
+}

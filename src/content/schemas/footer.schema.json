@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/footer.schema.json",
+  "title": "Footer Schema",
+  "description": "Definition structure of the website footer layout, legal columns, and social directories.",
+  "type": "object",
+  "properties": {
+    "columns": {
+      "type": "array",
+      "description": "Footer columns containing localized links.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "$ref": "common.schema.json#/definitions/LocalizedString",
+            "description": "Footer column label"
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+                "url": { "type": "string" }
+              },
+              "required": ["label", "url"]
+            }
+          }
+        },
+        "required": ["title", "links"]
+      }
+    },
+    "newsletterForm": {
+      "type": "object",
+      "description": "Optional footer email collection panel setup.",
+      "properties": {
+        "isActive": { "type": "boolean", "default": true },
+        "title": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+        "placeholder": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+        "submitText": { "$ref": "common.schema.json#/definitions/LocalizedString" }
+      }
+    },
+    "legalNotes": {
+      "type": "array",
+      "description": "Individual simple legal policy links (Privacy Policy, Terms of Service).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "url": { "type": "string" }
+        },
+        "required": ["label", "url"]
+      }
+    },
+    "copyright": {
+      "$ref": "common.schema.json#/definitions/LocalizedString",
+      "description": "Core trademark text visible at bottom of layouts."
+    }
+  },
+  "required": ["columns", "copyright"]
+}

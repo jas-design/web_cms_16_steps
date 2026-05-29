@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/form.schema.json",
+  "title": "Forms Schema",
+  "description": "Interactive layout schema modeling dynamic field inputs, validations, and target handlers.",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "$ref": "common.schema.json#/definitions/SectionMeta"
+    },
+    "formId": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "title": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "subtitle": {
+      "$ref": "common.schema.json#/definitions/LocalizedTextarea"
+    },
+    "actionUrl": {
+      "type": "string",
+      "description": "Endpoint to route webhook payloads upon click (useful for CMS & CRM pipelines)."
+    },
+    "submitLabel": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "successMessage": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fieldName": { "type": "string", "pattern": "^[a-z0-9_]+$", "description": "Form input DOM element key identifier." },
+          "label": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "fieldType": {
+            "type": "string",
+            "enum": ["text", "email", "tel", "textarea", "select", "checkbox"],
+            "default": "text"
+          },
+          "required": { "type": "boolean", "default": false },
+          "placeholder": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "errorMessage": { "$ref": "common.schema.json#/definitions/LocalizedString", "description": "Dynamic inline validation alert text." },
+          "options": {
+            "type": "array",
+            "description": "Select options list (applicable only to 'select' fields).",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": { "type": "string" },
+                "label": { "$ref": "common.schema.json#/definitions/LocalizedString" }
+              },
+              "required": ["value", "label"]
+            }
+          }
+        },
+        "required": ["fieldName", "label", "fieldType"]
+      }
+    }
+  },
+  "required": ["formId", "fields", "submitLabel"]
+}

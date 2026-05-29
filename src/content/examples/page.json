@@ -1,0 +1,56 @@
+{
+  "$schema": "../schemas/page.schema.json",
+  "slug": "treatments/cellular-active-peels",
+  "seo": {
+    "metaTitle": {
+      "en": "Cellular Active Peels Treatment Spec",
+      "es": "Especificaciones de Peelings Activos de Células",
+      "fr": "Spécifications des Peelings Cellulaires Actifs"
+    },
+    "metaDescription": {
+      "en": "Deep bio-organic fruit acid exfoliations optimized for sensitive dermis types to trigger safe skin turnover.",
+      "es": "Filtraciones profundas de ácidos frutales bioorgánicos para capas de piel sensibles sin enrojecer.",
+      "fr": "Formulé pour stimuler le renouvellement cellulaire en douceur, sans irritation ni rougeur."
+    },
+    "keywords": ["cellular peel", "fruit acid", "dermis turnover"],
+    "openGraph": {
+      "ogTitle": { "en": "Cellular Active Peels | Cutisure Clinical" },
+      "ogDescription": { "en": "Safe, professional fruit acid exfoliation with zero downtime." }
+    }
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "sectionId": "peel-hero-layout",
+      "content": {
+        "title": { "en": "Accelerate uniform cell turnover cycles safely" },
+        "primaryCta": {
+          "label": { "en": "Schedule Assessment" },
+          "url": "#booking-form",
+          "variant": "glow"
+        }
+      }
+    },
+    {
+      "type": "services",
+      "sectionId": "treatment-specifications-grid",
+      "isShared": true,
+      "sharedReferenceKey": "three-columns-dermal-matrix"
+    },
+    {
+      "type": "cta-section",
+      "sectionId": "booking-prompt-panel",
+      "content": {
+        "title": { "en": "Ready to renew your protective barrier?" },
+        "ctas": [
+          {
+            "label": { "en": "Secure Slot Now" },
+            "url": "#booking-form"
+          }
+        ]
+      }
+    }
+  ],
+  "publishedAt": "2026-05-29T18:00:00Z",
+  "updatedAt": "2026-05-29T18:05:00Z"
+}

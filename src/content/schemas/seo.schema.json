@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/seo.schema.json",
+  "title": "SEO Schema",
+  "description": "Comprehensive schema focusing on indexing controls, tag injections, and platform rankings.",
+  "type": "object",
+  "properties": {
+    "globalMetadata": {
+      "type": "object",
+      "description": "Global baseline fallback defaults.",
+      "properties": {
+        "titleSuffix": { "type": "string", "description": "Appended after localized page titles (e.g. ' | Cutisure')" },
+        "defaultOgType": { "type": "string", "default": "website" },
+        "siteVerification": {
+          "type": "object",
+          "properties": {
+            "google": { "type": "string", "description": "Google Search Console identifier string." },
+            "bing": { "type": "string" }
+          }
+        }
+      }
+    },
+    "pageSEO": {
+      "$ref": "common.schema.json#/definitions/SEOConfig"
+    }
+  },
+  "required": ["pageSEO"]
+}

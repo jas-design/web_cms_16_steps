@@ -1,0 +1,6 @@
+{
+  "name": "Astro Multipage Architecture",
+  "description": "The finished multipage skincare website built using highly-reusable React sections, layouts, and components mapped entirely from JSON files.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../schemas/global.schema.json",
+  "siteName": "Cutisure Pure Derma Care",
+  "localization": {
+    "defaultLocale": "en",
+    "supportedLocales": ["en", "es", "fr"]
+  },
+  "branding": {
+    "logoDark": {
+      "url": "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?auto=format&fit=crop&q=80&w=200",
+      "alt": "Cutisure Premium Skincare Monogram and wordmark",
+      "width": 200,
+      "height": 55,
+      "focalPoint": { "x": 0.5, "y": 0.5 }
+    },
+    "logoLight": {
+      "url": "https://images.unsplash.com/photo-1614850523060-8da1d56ae167?auto=format&fit=crop&q=80&w=200",
+      "alt": "Cutisure Monogram in light colors for dark backgrounds",
+      "width": 200,
+      "height": 55,
+      "focalPoint": { "x": 0.5, "y": 0.5 }
+    },
+    "primaryThemeColor": "#005a36"
+  },
+  "socialLinks": [
+    { "platform": "facebook", "url": "https://facebook.com/cutisure" },
+    { "platform": "instagram", "url": "https://instagram.com/cutisure.derma" },
+    { "platform": "linkedin", "url": "https://linkedin.com/company/cutisure" }
+  ],
+  "contact": {
+    "email": "clinical@cutisure.org",
+    "phone": "+1 (555) 782-3376",
+    "address": "450 Sutter St Suite 2100, San Francisco, CA 94108"
+  }
+}

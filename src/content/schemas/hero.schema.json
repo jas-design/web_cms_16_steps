@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/hero.schema.json",
+  "title": "Hero Section Schema",
+  "description": "Definition schema for structural landing hero component banners.",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "$ref": "common.schema.json#/definitions/SectionMeta"
+    },
+    "accentText": {
+      "$ref": "common.schema.json#/definitions/LocalizedString",
+      "description": "Visual pill or tag marking at top (e.g. 'Certified Solutions')."
+    },
+    "title": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "italicWord": {
+      "$ref": "common.schema.json#/definitions/LocalizedString",
+      "description": "Optional styled text block matching modern serif editorial layouts."
+    },
+    "subtitle": {
+      "$ref": "common.schema.json#/definitions/LocalizedTextarea"
+    },
+    "primaryCta": {
+      "$ref": "common.schema.json#/definitions/LinkCTA"
+    },
+    "secondaryCta": {
+      "$ref": "common.schema.json#/definitions/LinkCTA"
+    },
+    "media": {
+      "$ref": "common.schema.json#/definitions/MediaAsset"
+    },
+    "benefits": {
+      "type": "array",
+      "description": "Short micro-value bullet ticks featured below actions.",
+      "items": {
+        "$ref": "common.schema.json#/definitions/LocalizedString"
+      }
+    },
+    "floatingBadge": {
+      "$ref": "common.schema.json#/definitions/LocalizedString",
+      "description": "Floating overlay badge tag (e.g., '12+ Years Clinically Tested')."
+    }
+  },
+  "required": ["title", "primaryCta"]
+}

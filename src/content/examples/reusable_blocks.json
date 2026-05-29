@@ -1,0 +1,48 @@
+{
+  "siteMetrics": {
+    "title": { "en": "Verified Clinical Record" },
+    "metrics": [
+      {
+        "id": "metric-years",
+        "value": "12+",
+        "label": { "en": "Years Dermal Oversight" },
+        "description": { "en": "Continuous skin board research trials and peer audits." }
+      },
+      {
+        "id": "metric-purity",
+        "value": "99.4%",
+        "label": { "en": "Bioactive Extract Purity" },
+        "description": { "en": "Sourced from eco-certified fair-trade flora extracts." }
+      },
+      {
+        "id": "metric-count",
+        "value": "15K+",
+        "label": { "en": "Revitalized Patients" },
+        "description": { "en": "Progress recorded seamlessly under encryption." }
+      }
+    ]
+  },
+  "organicDiagnosticBullets": [
+    {
+      "id": "bullet-diagnosis",
+      "iconName": "shield",
+      "text": { "en": "High-purity botanical base matching human sebum density." }
+    },
+    {
+      "id": "bullet-hipaa",
+      "iconName": "lock",
+      "text": { "en": "Patient files transmitted securely via HIPAA TLS-1.3 pipelines." }
+    },
+    {
+      "id": "bullet-audits",
+      "iconName": "award",
+      "text": { "en": "Formula safety audited under direct medical board validation." }
+    }
+  ],
+  "dermalAssetBadge": {
+    "label": { "en": "Dermatologist Approved Base" },
+    "variant": "glow",
+    "size": "sm",
+    "icon": "award"
+  }
+}

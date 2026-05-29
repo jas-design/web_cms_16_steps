@@ -1,0 +1,41 @@
+{
+  "$schema": "../schemas/cta.schema.json",
+  "meta": {
+    "id": "reusable-primary-cta-banner",
+    "bgType": "accent-glow",
+    "paddingTop": "l",
+    "paddingBottom": "l"
+  },
+  "annotation": {
+    "en": "SAFE SKIN CARE JOURNEY",
+    "es": "SU VIAJE DE CUIDADO SEGURO"
+  },
+  "title": {
+    "en": "Are you ready to restore skin balance under certified guidance?",
+    "es": "¿Está listo para restaurar el equilibrio de su piel con guía profesional?"
+  },
+  "subtitle": {
+    "en": "Connect with our dermatologists to complete a customized diagnostics matrix. Let us target cell layer renewal gently without artificial fillers.",
+    "es": "Conéctese con nuestros dermatólogos para formular su matriz de diagnóstico. Permítanos promover la renovación celular de manera suave."
+  },
+  "layoutFormat": "card-inset",
+  "theme": "emerald-glass",
+  "ctas": [
+    {
+      "label": {
+        "en": "Start Secure Scan",
+        "es": "Iniciar Escaneo Seguro"
+      },
+      "url": "#contact",
+      "variant": "primary"
+    },
+    {
+      "label": {
+        "en": "Talk to Specialist",
+        "es": "Hablar con Especialista"
+      },
+      "url": "#faq",
+      "variant": "outline"
+    }
+  ]
+}

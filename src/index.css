@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+
+  --color-brand-teal: #0E9A92;
+  --color-brand-forest: #0E2A24;
+  --color-brand-chartreuse: #D4F038;
+  --color-brand-mint: #F4FAF9;
+  --color-brand-blue-bg: #EAF3FA;
+
+  --shadow-brand-glow: 0 4px 20px rgba(14, 154, 146, 0.15);
+  --shadow-chartreuse-glow: 0 4px 25px rgba(212, 240, 56, 0.25);
+}
+
+/* Custom visual rules: organic fluid frame */
+.aspect-leaf {
+  aspect-ratio: 4/5;
+  border-radius: 100px 40px 100px 40px;
+}
+.aspect-leaf-reverse {
+  aspect-ratio: 4/5;
+  border-radius: 40px 100px 40px 100px;
+}
+
+/* Base custom font pairs readability */
+.font-italic-accent {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+

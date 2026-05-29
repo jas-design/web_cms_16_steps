@@ -1,0 +1,252 @@
+{
+  "heroExample": {
+    "$schema": "../schemas/hero.schema.json",
+    "meta": {
+      "id": "skincare-hero-primary",
+      "bgType": "accent-glow",
+      "paddingTop": "xl",
+      "paddingBottom": "l"
+    },
+    "accentText": {
+      "en": "Clinically Supervised Aesthetics",
+      "es": "Estética Supervisada Clínicamente",
+      "fr": "Aide Esthétique Clinique"
+    },
+    "title": {
+      "en": "Protect and restore your natural acid mantle",
+      "es": "Proteja y restaure su manto de acidez natural",
+      "fr": "Protégez votre manteau acide naturel"
+    },
+    "italicWord": {
+      "en": "expert precision",
+      "es": "precisión experta",
+      "fr": "précision d'expert"
+    },
+    "subtitle": {
+      "en": "Pure bioactive botanical serums free from standard industrial fillers, harmful parabens, or aggressive acids. Designed for hyper-sensitive cells.",
+      "es": "Sueros botánicos bioactivos puros, libres de conservantes industriales, parabenos o ácidos agresivos.",
+      "fr": "Sérums botaniques bioactifs de haute pureté, formulés sans charges synthétiques ni parabènes."
+    },
+    "primaryCta": {
+      "label": { "en": "Book Dermal Scan" },
+      "url": "#contact",
+      "variant": "glow",
+      "isExternal": false
+    },
+    "secondaryCta": {
+      "label": { "en": "Inspect Treatments" },
+      "url": "#services",
+      "variant": "outline"
+    },
+    "media": {
+      "url": "https://images.unsplash.com/photo-1556228515-3198ece1c440?auto=format&fit=crop&q=80&w=600",
+      "alt": "Certified clean laboratory environment with bio-extract tubes and botanicals",
+      "width": 600,
+      "height": 450,
+      "focalPoint": { "x": 0.5, "y": 0.5 }
+    },
+    "benefits": [
+      { "en": "99.4% Bioactive Base" },
+      { "en": "HIPAA-Encrypted Records" },
+      { "en": "Zero Parabens" }
+    ],
+    "floatingBadge": {
+      "en": "Active Natural Base"
+    }
+  },
+  "servicesExample": {
+    "$schema": "../schemas/services.schema.json",
+    "meta": {
+      "id": "dermal-services-section",
+      "bgType": "primary",
+      "paddingTop": "m",
+      "paddingBottom": "m"
+    },
+    "annotation": {
+      "en": "RESTORATIVE DERMIS PROTOCOLS"
+    },
+    "title": {
+      "en": "Scientifically guarded cellular alignments"
+    },
+    "subtitle": {
+      "en": "Rigorous medical board diagnostics meeting organic, non-disruptive nourishment structures."
+    },
+    "columns": 3,
+    "items": [
+      {
+        "title": { "en": "Hydrating Moisture Infusions" },
+        "description": { "en": "Rehydrate dry skin layers deeply with low-molecular hydration weight boosters." },
+        "iconName": "smile",
+        "tags": [
+          { "en": "100% Organic" },
+          { "en": "Deep Moisture" }
+        ],
+        "action": {
+          "label": { "en": "Read Scientific Spec" },
+          "url": "#services-infusion"
+        }
+      },
+      {
+        "title": { "en": "Fractioned UV Barriers" },
+        "description": { "en": "Soothe atmospheric burns and strengthen lipid bounds using herbal enzymes." },
+        "iconName": "shield",
+        "tags": [
+          { "en": "Antioxidant" },
+          { "en": "Screen Protection" }
+        ],
+        "action": {
+          "label": { "en": "Read Scientific Spec" },
+          "url": "#services-uv"
+        }
+      }
+    ]
+  },
+  "testimonialsExample": {
+    "$schema": "../schemas/testimonials.schema.json",
+    "meta": {
+      "id": "testimony-carousel-highlights",
+      "bgType": "secondary",
+      "paddingTop": "m",
+      "paddingBottom": "s"
+    },
+    "annotation": { "en": "PATIENT FEEDBACK CERTIFIED" },
+    "title": { "en": "Verified skincare transformations" },
+    "subtitle": { "en": "Read honest experiences from patients with sensitive, easily-triggered skin profiles." },
+    "layout": "grid",
+    "items": [
+      {
+        "quote": { "en": "My sensitive skin was prone to painful redness after ordinary spa treatments. Cutisure's low-molecular booster infusion felt soothing immediately, resolving tightness within days." },
+        "authorName": "Dr. Clara Sterling",
+        "authorRole": { "en": "Academic Researcher" },
+        "rating": 5,
+        "avatar": {
+          "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150",
+          "alt": "Portrait of Dr. Clara Sterling",
+          "width": 150,
+          "height": 150,
+          "focalPoint": { "x": 0.5, "y": 0.3 }
+        },
+        "verifiedTreatment": { "en": "Moisture Infusion Protocol" }
+      }
+    ]
+  },
+  "pricingExample": {
+    "$schema": "../schemas/pricing.schema.json",
+    "meta": {
+      "id": "pricing-matrix-plans",
+      "bgType": "tertiary",
+      "paddingTop": "m",
+      "paddingBottom": "m"
+    },
+    "annotation": { "en": "TRANSPARENT VALUE MATRIX" },
+    "title": { "en": "Personalized dermal health plans" },
+    "subtitle": { "en": "Transparent clinical session structures without hidden overheads or automatic recurring billing." },
+    "currencySymbol": "$",
+    "billingIntervals": [
+      { "en": "Per Diagnostic" },
+      { "en": "Course Package" }
+    ],
+    "plans": [
+      {
+        "planName": { "en": "Dermis Base Diagnostics" },
+        "price": "145",
+        "billingSuffix": { "en": "session" },
+        "description": { "en": "Complete medical-grade diagnostic audit measuring baseline moisture values and sebum ratios." },
+        "isPopular": false,
+        "features": [
+          { "en": "Full Sebum Diagnostic Profile" },
+          { "en": "pH Acid Mantle Scan" },
+          { "en": "Dermatologist Supervision Hour" }
+        ],
+        "action": {
+          "label": { "en": "Book Diagnostic" },
+          "url": "#contact",
+          "variant": "primary"
+        }
+      },
+      {
+        "planName": { "en": "Full Barrier Fortification" },
+        "price": "390",
+        "billingSuffix": { "en": "complete course" },
+        "description": { "en": "Three-stage active booster peels combined with intense hydration matrix application." },
+        "isPopular": true,
+        "badgeClean": { "en": "Dermatologist Recommended" },
+        "features": [
+          { "en": "3x Cellular HydroPeel Cycles" },
+          { "en": "Low-Molecular Booster Packs (Takehome)" },
+          { "en": "Dermal Protective Tracking Phone Logs" },
+          { "en": "Priority Booking Re-alignment slots" }
+        ],
+        "action": {
+          "label": { "en": "Select Strategy Package" },
+          "url": "#contact",
+          "variant": "glow"
+        }
+      }
+    ]
+  },
+  "faqExample": {
+    "$schema": "../schemas/faq.schema.json",
+    "meta": {
+      "id": "frequent-clinical-questions",
+      "bgType": "secondary",
+      "paddingTop": "m",
+      "paddingBottom": "m"
+    },
+    "annotation": { "en": "COMMON DERMAL CONCERNS" },
+    "title": { "en": "Skincare guidelines & FAQs" },
+    "subtitle": { "en": "Read official board statements on active extracts, safety guarantees, and clinical standards." },
+    "enableFilter": true,
+    "categories": ["Therapies", "Ingredients", "Billing"],
+    "items": [
+      {
+        "question": { "en": "Are your organic extracts safe for hyper-sensitive conditions?" },
+        "answer": { "en": "Yes, absolutely. By extracting nutrients via organic cold-pressing and strictly banning conventional fillers (parabens, silicones, synthetic scents), we prevent skin allergy triggers." },
+        "category": "Ingredients"
+      },
+      {
+        "question": { "en": "Do I need a prescription to undergo treatments?" },
+        "answer": { "en": "No. Our treatments use highly purified bioactive botanicals. While medical-grade in strength, they reside inside non-pharmaceutical cosmetic definitions, meaning you can book freely without prior medical prescriptions." },
+        "category": "Therapies"
+      }
+    ]
+  },
+  "galleryExample": {
+    "$schema": "../schemas/gallery.schema.json",
+    "meta": {
+      "id": "clinical-clinical-gallery-photos",
+      "bgType": "primary",
+      "paddingTop": "s",
+      "paddingBottom": "m"
+    },
+    "annotation": { "en": "SANCTUARY & LAB REVEAL" },
+    "title": { "en": "Inside the Cutisure sanctuary" },
+    "subtitle": { "en": "Glance at our clinical compound stations and clean patient-aligned recovery suites." },
+    "columns": 2,
+    "aspectRatio": "square",
+    "items": [
+      {
+        "media": {
+          "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=600",
+          "alt": "Clean aesthetic skincare glass bottle on clean stone layout background",
+          "width": 600,
+          "height": 600
+        },
+        "title": { "en": "Bio-Organic Extract Serum Bottle" },
+        "description": { "en": "Double-layered protection against ambient ultraviolet degradation." },
+        "category": "Laboratory"
+      },
+      {
+        "media": {
+          "url": "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?auto=format&fit=crop&q=80&w=600",
+          "alt": "Clean, light-filled patient recovery room with plants and soft linen surfaces",
+          "width": 600,
+          "height": 600
+        },
+        "title": { "en": "Private Consultation Room" },
+        "description": { "en": "Soothing organic environment crafted to lower cortisol and optimize treatment uptake." },
+        "category": "Clinic"
+      }
+    ]
+  }
+}

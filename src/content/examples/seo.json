@@ -1,0 +1,53 @@
+{
+  "$schema": "../schemas/seo.schema.json",
+  "globalMetadata": {
+    "titleSuffix": " | Cutisure Clinical Skincare",
+    "defaultOgType": "website",
+    "siteVerification": {
+      "google": "g-verify-code-cutisure-1234567890",
+      "bing": "b-verify-code-9876543210"
+    }
+  },
+  "pageSEO": {
+    "metaTitle": {
+      "en": "Organic Dermatology & Pure Clinical Treatments",
+      "es": "Dermatología Orgánica y Tratamientos Clínicos Puros",
+      "fr": "Dermatologie Organique & Traitements Cliniques Purs"
+    },
+    "metaDescription": {
+      "en": "Protect and restore skin longevity under strict dermatologist supervision. Zero parabens, clinical trials audited, low-molecular hydration technology.",
+      "es": "Proteja y restaure la longevidad de su piel bajo supervisión dermatológica. Sin parabenos, pruebas clínicas auditadas, ácido hialurónico molecular.",
+      "fr": "Protégez et restaurez la longévité de votre peau sous contrôle dermatologique. Sans parabènes, essais cliniques audités."
+    },
+    "keywords": [
+      "organic dermatology",
+      "clinical skincare",
+      "hipaa encrypted records",
+      "paraben free moisture booster"
+    ],
+    "openGraph": {
+      "ogTitle": {
+        "en": "Dermatologist-Approved Botanical Skin Solutions",
+        "es": "Soluciones Botánicas para la Piel Aprobadas por Dermatólogos",
+        "fr": "Solutions Botaniques pour la Peau Approuvées par les Dermatologues"
+      },
+      "ogDescription": {
+        "en": "See what high-purity medical active botanicals can do for your skin protective barrier.",
+        "es": "Descubra el poder de los ingredientes botánicos bioactivos puros en la barrera de su piel.",
+        "fr": "Découvrez le pouvoir des végétaux bioactifs sur votre barrière cutanée."
+      },
+      "ogImage": {
+        "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=1200",
+        "alt": "Clean glass bottle of dermal repair solution in clinical background",
+        "width": 1200,
+        "height": 630,
+        "focalPoint": { "x": 0.5, "y": 0.5 }
+      },
+      "ogType": "article"
+    },
+    "indexing": {
+      "robotsMeta": "index, follow",
+      "canonicalUrl": "https://cutisure.org/treatments"
+    }
+  }
+}

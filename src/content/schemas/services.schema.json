@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/services.schema.json",
+  "title": "Services Grid Section Schema",
+  "description": "Definition schema representing catalog grids, specific pathways, or treatment matrices.",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "$ref": "common.schema.json#/definitions/SectionMeta"
+    },
+    "annotation": {
+      "$ref": "common.schema.json#/definitions/LocalizedString",
+      "description": "Short category tracking label."
+    },
+    "title": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "subtitle": {
+      "$ref": "common.schema.json#/definitions/LocalizedTextarea"
+    },
+    "columns": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "default": 3,
+      "description": "Responsive layout grid column sizing config."
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "description": { "$ref": "common.schema.json#/definitions/LocalizedTextarea" },
+          "iconName": {
+            "type": "string",
+            "description": "Lucide icon reference name (e.g. 'sparkles', 'smile', 'shield', 'heart')."
+          },
+          "tags": {
+            "type": "array",
+            "items": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+            "description": "Visual diagnostic badges identifying items."
+          },
+          "action": {
+            "$ref": "common.schema.json#/definitions/LinkCTA",
+            "description": "Optional inline redirect button/link."
+          },
+          "media": {
+            "$ref": "common.schema.json#/definitions/MediaAsset",
+            "description": "Optional asset representing visual treatments / diagrams."
+          }
+        },
+        "required": ["title", "description", "iconName"]
+      }
+    }
+  },
+  "required": ["title", "items"]
+}

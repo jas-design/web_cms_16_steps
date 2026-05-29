@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/faq.schema.json",
+  "title": "FAQ Component Schema",
+  "description": "Validation constraints modeling collapsible general and clinical inquiry answers.",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "$ref": "common.schema.json#/definitions/SectionMeta"
+    },
+    "annotation": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "title": {
+      "$ref": "common.schema.json#/definitions/LocalizedString"
+    },
+    "subtitle": {
+      "$ref": "common.schema.json#/definitions/LocalizedTextarea"
+    },
+    "enableFilter": {
+      "type": "boolean",
+      "default": true,
+      "description": "Exhibits filter buttons to navigate questions by taxonomy tags."
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of string categories for fast interactive filtering."
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "$ref": "common.schema.json#/definitions/LocalizedString" },
+          "answer": { "$ref": "common.schema.json#/definitions/LocalizedTextarea" },
+          "category": { "type": "string", "description": "Category tags corresponding to parent indexing keys." }
+        },
+        "required": ["question", "answer"]
+      }
+    }
+  },
+  "required": ["title", "items"]
+}
